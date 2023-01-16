@@ -8,7 +8,6 @@ class ApiService {
   static const today = "today";
 
   Future<List<WebToonModel>> getTodaysToons() async {
-    print("getTodaysToons");
     List<WebToonModel> webtoonInstances = [];
     final url = Uri.parse("$baseUrl/$today");
     final response = await http.get(url);
